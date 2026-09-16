@@ -1,0 +1,54 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "PopnMusic6"
+id = "SLPM-87089"
+players = 1
+exe = "disc/SLPM_870.89"
+disc = "/home/silver/Documentos/PopnMusic6Recomp/game/Pop'n Music 6 (Japan).cue"
+load_address = "0x80010000"
+entry_pc = "0x80043D98"
+text_size = "0x0003D800"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Pop'n Music 6 (Japan).bin"
+cue_name = "Pop'n Music 6 (Japan).cue"
+boot_exe = "SLPM_870.89"
+known_sizes = [666792000]
+known_md5 = [
+  "22452fb92b05b8c45d40f452a81cc96e",
+]
+known_sha1 = [
+  "4314b66e816b2d653f40cff0c0454cbed6c75647",
+]
+known_crc32 = [
+  "f89d20a9",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "PopnMusic6 Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "a1adb346a2d196d0cec4dd47022fd512b89f46c23882020829908a2f9d916106"

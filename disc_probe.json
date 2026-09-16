@@ -1,0 +1,31 @@
+{
+  "cue_path": "/home/silver/Documentos/PopnMusic6Recomp/game/Pop'n Music 6 (Japan).cue",
+  "cue_name": "Pop'n Music 6 (Japan).cue",
+  "bin_name": "Pop'n Music 6 (Japan).bin",
+  "track_count": 1,
+  "data_track_size": 666792000,
+  "data_track_md5": "22452fb92b05b8c45d40f452a81cc96e",
+  "data_track_sha1": "4314b66e816b2d653f40cff0c0454cbed6c75647",
+  "data_track_crc32": "f89d20a9",
+  "boot_exe": "SLPM_870.89",
+  "serial": "SLPM-87089",
+  "serial_exe": "SLPM_870.89",
+  "volume_id": "POPNMUSIC6",
+  "display_name": "PopnMusic6",
+  "load_address": "0x80010000",
+  "entry_pc": "0x80043D98",
+  "text_size": "0x0003D800",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "a1adb346a2d196d0cec4dd47022fd512b89f46c23882020829908a2f9d916106",
+  "boot_exe_sha256": "bc5d6d5f030e33ad195961484b1dee7d7770cca22fd2f76d98fb305f136e44d7",
+  "seed_count": 669,
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
